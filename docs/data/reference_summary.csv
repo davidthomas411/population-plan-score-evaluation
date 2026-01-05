@@ -1,0 +1,197 @@
+protocol,plans,constraints_total,constraints_with_values,plans_scored,source
+Breast 42.56Gy Tangent Right,745,14,11,391,standard_protocols_name
+Breast 40.05Gy  4fields Left,658,21,16,322,standard_protocols_name
+Prostate 70Gy in 28fx,651,19,2,458,standard_protocols_name
+Lung 45Gy in30fx,356,9,4,218,standard_protocols_name
+Breast 40.05Gy Tangent Left,337,14,1,0,standard_protocols_name
+GBM 60Gy in 30fx,281,22,4,72,standard_protocols_name
+Lung SBRT 50Gy in 4fx,259,22,10,161,standard_protocols_name
+UK Fast-Forward  26 Gy / 5 fx daily Left,199,9,7,186,standard_protocols_name
+Rectal 54Gy in 27fx,181,26,17,96,standard_protocols_name
+Lung SBRT 60Gy in 5fx,178,24,9,154,standard_protocols_name
+H&N Def Other,160,49,29,152,standard_protocols_name
+H&N Def OC,150,50,29,149,standard_protocols_name
+"Florence,30 Gy/5 fx Left",145,15,10,131,standard_protocols_name
+Brain SRS 1fx,142,27,3,104,standard_protocols_name
+Lung SBRT 54Gy in 3fx,141,25,12,108,standard_protocols_name
+Prostate SBRT,137,41,7,77,standard_protocols_name
+H&N Postop Other,115,44,21,112,standard_protocols_name
+Lung 60-66Gy in30-33fx,113,20,6,80,standard_protocols_name
+UNKNOWN,109,0,0,0,missing
+General GYN no LNs,99,32,12,86,protocols
+Brain SRT 3fx,95,26,5,83,standard_protocols_name
+General GYN with LNs Boost,94,28,6,90,protocols
+H&N Postop OC,83,45,21,83,standard_protocols_name
+WBRT-HA 30 Gy in 10fx,81,10,2,0,standard_protocols_name
+Brain SRT 5fx,78,25,5,62,standard_protocols_name
+Lung Hypofx 60Gy in 15fx,77,14,0,0,standard_protocols_name
+Prostate Re-RT SBRT,67,18,9,6,standard_protocols_name
+Bone mets 2000 5fx NRG-CC014,66,11,6,8,protocols
+GBM re-RT 35Gy in 10fx - No previous radiation to the local area or critical OARs,63,5,0,0,standard_protocols_name
+H&N Def LxHypo,60,48,29,60,standard_protocols_name
+GBM 40.05Gy in 15fx,60,12,0,0,standard_protocols_name
+Breast 46Gy 4fields Left,58,19,13,48,standard_protocols_name
+Lung Hypofx 60-70Gy in 10fx,56,14,5,16,standard_protocols_name
+Spine SBRT 3fx,55,3,2,0,standard_protocols_name
+UK FAST 28.5 Gy / 5 fx weekly Right,52,12,10,50,standard_protocols_name
+Esophagus in 23-28fx,48,31,3,31,standard_protocols_name
+Breast 40.05Gy Tangent Right,41,14,9,26,standard_protocols_name
+Spine SBRT 5fx,41,3,2,0,standard_protocols_name
+Anal in 25-33fx,40,42,1,24,standard_protocols_name
+Pancreas HIGRT ALLIANCE 25Gy in 5fx,39,13,9,3,protocols
+Prostate Fossa 6840 38 fx,38,18,17,33,protocols
+Pancrease  in 25fx,35,8,2,7,standard_protocols_name
+Sarcoma,30,18,9,16,standard_protocols_name
+UK Fast-Forward  26 Gy / 5 fx daily Right,29,9,1,0,standard_protocols_name
+Pancrease in 28-30fx,26,28,6,23,standard_protocols_name
+H&N Postop LxHypo,25,43,21,25,standard_protocols_name
+Intact Vulva with LNs Boost,25,26,18,25,protocols
+Bone mets 800 1fx NRG-CC014,24,11,6,2,protocols
+Whole Brain Hippocampal Sparing,23,16,5,22,protocols
+3DTLSPINE,22,10,6,17,protocols
+Spine SBRT 1fx,22,3,2,0,standard_protocols_name
+Lung SBRT 34Gy in 1fx,22,22,10,8,standard_protocols_name
+Pancrease  in 15fx,21,8,2,11,standard_protocols_name
+Breast 45Gy in 30fx BID Re-RT Left,21,11,8,15,standard_protocols_name
+3D TSPINE,19,8,6,14,protocols
+Prostate 60Gy in 20fx,16,9,8,13,standard_protocols_name
+WBRT-HA 25Gy in 10fx,15,10,2,0,standard_protocols_name
+Prostate 55Gy in 20fx,14,7,6,7,standard_protocols_name
+Prostate Pelvis 4600 23fx EBRT HDR boost,14,15,1,2,protocols
+Prostate 84.70.56.50.4 GU009 2.5GY FX PROTOCOL,13,30,7,13,protocols
+Extra Thoracic 3000 10fx NRGLU007,12,26,0,0,protocols
+Lymphoma_hematologic nccn. need to finalize,11,28,8,9,protocols
+GYN LNs Boost,11,32,1,4,standard_protocols_name
+Prostate Intact 7920 44fx,10,18,15,8,protocols
+3D CTSPINE,9,8,6,8,protocols
+Prostate 84.70.56.50.4 GU009 3GY FX PROTOCOL,8,28,18,8,protocols
+HN_70Gy 35fx Nivolumab,8,27,0,0,protocols
+brain morrison k,7,20,5,7,protocols
+Prostate Intact 7800 39fx,7,18,15,6,protocols
+Abdomen BR002 5fx,7,34,0,0,protocols
+Prostate Intact 8100 45fx,6,18,15,2,protocols
+Extra Thoracic 2000 5fx NRGLU007,6,26,0,0,protocols
+Spine SBRT 24Gy in 1fx,6,0,0,0,missing
+H&N 6000 30fx Pembrolizumab,5,24,11,0,protocols
+"Pancreas 54, 45",5,20,7,5,protocols
+GYN No LNs,5,32,0,0,standard_protocols_name
+Timmerman10fx,5,70,14,0,protocols
+"Bladder Dr Jain 55,44",5,18,14,5,protocols
+Prostate Pelvis 4500 25fx,5,0,0,0,missing
+Anal Canal CD 54+36 RTOG 0539,4,32,26,4,protocols
+Liver 35Gy in 5fx,4,15,11,4,protocols
+lung retreat composite report max,4,33,12,4,protocols
+Prostate 70-56-47.6Gy_2.5x28,4,24,13,4,protocols
+GYNLNs sib55_45,4,25,2,4,protocols
+SBRT PELVIS 3fx. 27Gy  TIMMERMAN,4,24,20,4,protocols
+HN 36g,3,20,14,3,protocols
+R temple 55G,3,9,8,2,protocols
+Prostate Intact 8000 40fx,3,18,4,3,protocols
+Prostate 84.70.56.50.4 GU009 PROTOCOL,3,0,0,0,missing
+Anal Canal SIB 54+45 RTOG 0539,3,32,32,3,protocols
+JANUS RECTAL PROTOCOL 54- 45 SIB,3,25,16,3,protocols
+Lung 300x15=4500cGy,3,15,15,3,protocols
+Prostate 4500 25fx (scaled from 7000),3,23,9,3,protocols
+Mediastinum Gaston - absolute,3,45,26,3,protocols
+"Casttro, Luz A re-irradiation HN BID",2,42,31,2,protocols
+SBRT 2400 L1,2,17,15,2,protocols
+"PELVIS+ABD 55,45",2,35,23,2,protocols
+Lymphoma_NCCN. ABDOMEN+THORAX,2,45,16,2,protocols
+Lymphoma HN or Thorax,2,23,6,2,protocols
+Breast 50Gy Left,2,10,1,0,standard_protocols_name
+Brain DMAX REPORT,2,10,5,0,protocols
+Bile Duct 56 and 45,2,18,6,2,protocols
+"ParaAortics 55,45",2,22,12,2,protocols
+Paratracheal or SCV 5FX 35GY SBRT - Benhayon,2,41,17,2,protocols
+brain generic MAX REPORT,2,16,13,0,protocols
+benn,2,0,0,0,missing
+Rectal G1002,2,0,0,0,missing
+ABD_Pelv SBRT 600_700 x 5 - Trull,2,0,0,0,missing
+met sample,2,0,0,0,missing
+Timmerman20fx,2,65,4,0,protocols
+Timmerman4fx,2,52,3,0,protocols
+Lung 150x30=4500cGy BID,2,19,9,2,protocols
+tspien proch,2,7,5,2,protocols
+Anal METZ,2,24,5,2,protocols
+HN_BID_60Gy_50fx based on ECOG-ACRIN,2,24,15,2,protocols
+3DTLSPINEHAWKINS,2,10,7,2,protocols
+BETTENCOURT,1,8,2,1,protocols
+Anus SIB RTOG 0529 Script,1,0,0,0,missing
+"Scherfel, Margaret Elbow",1,0,0,0,missing
+SULLIVAN__CHRISTINE__403376151__C1_Plan_Sum,1,0,0,0,missing
+SPC_PLAN_SUM,1,0,0,0,missing
+SBRT sib25_20 - JNJ - smith,1,0,0,0,missing
+"H&N 70,63,56 - JNJ",1,0,0,0,missing
+SBRT Bone 2400 in 2fx,1,18,13,1,protocols
+"H&N 70,63,56_EA3161 SUM",1,39,28,1,protocols
+R_NECK_TONSIL_R_NECK_TONSIL,1,0,0,0,missing
+BOT_orig8fx_&_replan,1,0,0,0,missing
+RT_CW_Plan_Sum,1,0,0,0,missing
+RT_BRST_Rt_Breast_HB,1,0,0,0,missing
+RT_BREAST_LNs_R_BRST_LN_N,1,0,0,0,missing
+"RTOG 0413, 38.5 Gy/10 fx Left",1,11,0,0,standard_protocols_name
+RHIPILIAC30G,1,13,10,0,protocols
+H&N Palliative 30Gy 5fx,1,0,0,0,missing
+GYN Pel66.4G BOYLE,1,16,1,1,protocols
+cammarata H&N,1,0,0,0,missing
+ABDO 35G SBRT BARJI,1,10,5,1,protocols
+bowman,1,0,0,0,missing
+lopez,1,0,0,0,missing
+WBRT-HA HENRY,1,12,2,0,protocols
+000 delet,1,38,29,1,protocols
+orobko,1,0,0,0,missing
+Timmerman2fx,1,58,4,0,protocols
+Abdomen_Pancreas 40Gy in 5fx,1,20,8,1,protocols
+H&N - 60 revised,1,32,23,1,protocols
+Timmerman8fx,1,58,0,0,protocols
+Anus SIB RTOG 0529 - Copy,1,0,0,0,missing
+Adrenal sbrt 5fx24G_risley_JNJ,1,0,0,0,missing
+3D CSPINEFRANKEN,1,8,5,1,protocols
+General GYN with LNs FOWLER,1,33,3,1,protocols
+Grandrimo,1,0,0,0,missing
+Bladder 55 JNJ,1,14,7,1,protocols
+HARPER__DAMANI__407615419__C1_LUL_AxbTest,1,0,0,0,missing
+BRAIN 20G O HARA,1,12,9,1,protocols
+Unilateral_Left,1,22,9,1,protocols
+Liver_Pancreas 40Gy in 5fx - Schiavo,1,0,0,0,missing
+CURRIE__LEON__408368122__C1_Pelvis-3fiel3,1,0,0,0,missing
+CSPINEMATOS,1,8,3,1,protocols
+CAPELLA     Prostate,1,15,7,1,protocols
+Lt LUE AX -HARRELL,1,0,0,0,missing
+Lt scvax - JNJ - Copy,1,0,0,0,missing
+Pancreas 30,1,21,0,0,protocols
+PalliationForLocallyAdvancedUnresectableTumorSIB,1,21,9,1,protocols
+PUGH__DIEMMA__400606180__C1_Plan_Sum,1,0,0,0,missing
+Prostate LN Boost PostOp 7400 ACM,1,0,0,0,missing
+Lung 5500 22Fx,1,0,0,0,missing
+Lung 60-66,1,22,12,1,protocols
+"Lymphoma_Mediastinum 45,36 Dr Jain",1,17,1,1,protocols
+"Lymphoma_Mediastinum 40,30 Dr Jain",1,18,1,1,protocols
+Lung 6000-6000 16fx RePlan JS MWW,1,0,0,0,missing
+FOX SIB 6250_5000 25fx,1,16,9,1,protocols
+Chest wall 42.56Gy 4fields Right,1,20,0,0,standard_protocols_name
+EVAL_C1_Plan_Sum1,1,0,0,0,missing
+EVAL_C1_WB_HS3,1,0,0,0,missing
+EVAL_C1_Plan_Sum_3d,1,0,0,0,missing
+Lung,1,0,0,0,missing
+HB_L_SC_CW_Plan_Sum,1,0,0,0,missing
+HN_Postop BUZBY,1,40,32,1,protocols
+HN_Postop Evans - Eye 56-ON 55,1,42,31,1,protocols
+HN_lymphoma 30Gy 15Fx,1,38,32,1,protocols
+HUNT__DEANN__03214178__C1_left_breast2,1,0,0,0,missing
+Head Neck 66 60 54,1,0,0,0,missing
+Intact Vulva LNs Boost ARCHIBLAD COMP,1,33,22,1,protocols
+Intact Vulva no LNs,1,26,11,1,protocols
+L ILIAC HENRY,1,12,8,0,protocols
+Liver 35Gy in 5fx 2 Sites Labarge,1,19,10,1,protocols
+LILIAC HOUCK,1,6,5,1,protocols
+Plan_Sum1,1,0,0,0,missing
+Pelvis GY017,1,0,0,0,missing
+Paratracheal or SCV 5FX 35GY SBRT - Benhayon - Copy,1,41,11,1,protocols
+LUNG EQD2 THORACIC PLAN SUM CONSTRAINTS,1,13,2,1,protocols
+Liver 3000 10fx NRGLU007,1,18,0,0,protocols
+ParaAorticLN 4 Fractions SBRT,1,16,3,1,protocols
+Pancreas SBRT ALLIANCE 33Gy in 5fx,1,16,1,1,protocols
+Pancreas 54_4509,1,14,6,1,protocols
+"Pancreas 54, 51",1,23,10,1,protocols
+L KIDNEY- MATTICKS 5fx 35Gy,1,0,0,0,missing

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Population Plan Score Evaluation</title>
+    <link rel="stylesheet" href="site.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background-gradient"></div>
+    <div class="noise-layer"></div>
+
+    <header class="hero">
+      <div class="container">
+        <div class="logo-row">
+          <div class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="presentation">
+              <circle cx="32" cy="32" r="28" fill="#efe2d0" stroke="#1f5a5c" stroke-width="2" />
+              <path d="M20 34h24" stroke="#1f5a5c" stroke-width="3" stroke-linecap="round" />
+              <path d="M32 20v24" stroke="#b24a2b" stroke-width="3" stroke-linecap="round" />
+            </svg>
+          </div>
+          <p class="eyebrow">Population Plan Score Study</p>
+        </div>
+        <h1>Population Plan Score Stability and Generalization</h1>
+        <p class="subtitle">
+          Protocol-aware stability analysis of population plan scores derived from approved DVH evaluations.
+        </p>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <p class="stat-label">Approved Evaluations</p>
+            <p class="stat-value" data-stat="approved_evaluations">--</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Approved Plans</p>
+            <p class="stat-value" data-stat="approved_plans">--</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Protocols Total</p>
+            <p class="stat-value" data-stat="protocols_total">--</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Protocols Scored</p>
+            <p class="stat-value" data-stat="protocols_scored">--</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <div class="section-title">
+          <h2>Draft Abstract</h2>
+          <p class="section-subtitle">Auto-generated from the latest outputs</p>
+        </div>
+        <div class="abstract-grid">
+          <div class="card">
+            <h3>Purpose</h3>
+            <p data-abstract="purpose">--</p>
+          </div>
+          <div class="card">
+            <h3>Methods</h3>
+            <p data-abstract="methods">--</p>
+          </div>
+          <div class="card">
+            <h3>Results</h3>
+            <p data-abstract="results">--</p>
+          </div>
+          <div class="card">
+            <h3>Conclusions</h3>
+            <p data-abstract="conclusions">--</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">
+          <h2>Key Metrics</h2>
+          <p class="section-subtitle">Aggregated stability and coverage</p>
+        </div>
+        <div class="summary-grid">
+          <div class="card">
+            <h3>Constraint Coverage</h3>
+            <p class="stat-value" data-stat="protocols_with_constraints">--</p>
+            <p class="section-subtitle">Protocols mapped to constraints</p>
+          </div>
+          <div class="card">
+            <h3>Missing Constraints</h3>
+            <p class="stat-value" data-stat="protocols_missing_constraints">--</p>
+            <p class="section-subtitle">Protocols without mappings</p>
+          </div>
+          <div class="card">
+            <h3>Plans Scored</h3>
+            <p class="stat-value" data-stat="plans_scored">--</p>
+            <p class="section-subtitle">Computed plan scores</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">
+          <h2>Figures</h2>
+          <p class="section-subtitle">Generated from protocol stability outputs</p>
+        </div>
+        <div class="figure-grid">
+          <figure class="card figure-card">
+            <img src="figures/fig_learning_curves.png" alt="Learning curves" />
+            <figcaption>Learning curves with median and IQR across protocols.</figcaption>
+          </figure>
+          <figure class="card figure-card">
+            <img src="figures/fig_top_protocols.png" alt="Top protocols" />
+            <figcaption>Top protocols by approved plan count.</figcaption>
+          </figure>
+          <figure class="card figure-card">
+            <img src="figures/fig_nstar_distribution.png" alt="N* distribution" />
+            <figcaption>Distribution of N* across protocols with stability fits.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">
+          <h2>Top Protocols</h2>
+          <p class="section-subtitle">Approved plan counts (top 12)</p>
+        </div>
+        <div class="card">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Protocol</th>
+                <th>Plans</th>
+              </tr>
+            </thead>
+            <tbody id="top-protocols"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">
+          <h2>Refresh Instructions</h2>
+          <p class="section-subtitle">Update the page after regenerating outputs</p>
+        </div>
+        <div class="card">
+          <ol>
+            <li>Run the pipeline or update steps in `scripts/run_pipeline.sh`.</li>
+            <li>Refresh figures with `python3 scripts/render_figures.py`.</li>
+            <li>Export aggregated data with `python3 scripts/export_csv.py`.</li>
+            <li>Commit and push updates to publish.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Generated from local outputs. No PHI is included.</p>
+    </footer>
+
+    <script>
+      async function loadSummary() {
+        const response = await fetch("data/project_summary.json");
+        const data = await response.json();
+
+        const stats = data.stats || {};
+        document.querySelectorAll("[data-stat]").forEach((el) => {
+          const key = el.dataset.stat;
+          if (key in stats) {
+            el.textContent = Number(stats[key]).toLocaleString();
+          }
+        });
+
+        const abstract = data.abstract || {};
+        document.querySelectorAll("[data-abstract]").forEach((el) => {
+          const key = el.dataset.abstract;
+          if (key in abstract) {
+            el.textContent = abstract[key];
+          }
+        });
+
+        const tbody = document.getElementById("top-protocols");
+        tbody.innerHTML = "";
+        (data.top_protocols || []).forEach((row) => {
+          const tr = document.createElement("tr");
+          const tdName = document.createElement("td");
+          const tdCount = document.createElement("td");
+          tdName.textContent = row.protocol;
+          tdCount.textContent = Number(row.plan_count).toLocaleString();
+          tr.appendChild(tdName);
+          tr.appendChild(tdCount);
+          tbody.appendChild(tr);
+        });
+      }
+
+      loadSummary().catch((err) => {
+        console.error("Failed to load project summary", err);
+      });
+    </script>
+  </body>
+</html>

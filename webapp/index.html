@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Population Plan Score Stability Dashboard</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  </head>
+  <body>
+    <div class="background-gradient"></div>
+    <div class="noise-layer"></div>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">AAPM Study Dashboard</p>
+        <h1>Population Plan Score Stability and Generalization</h1>
+        <p class="subtitle">
+          Protocol-aware population plan score stability using approved DVH evaluations.
+          Updated outputs reload on refresh.
+        </p>
+        <div class="hero-actions">
+          <button class="print-button" id="print-button" type="button">Export PDF</button>
+          <span class="print-hint">Opens the system print dialog for “Save as PDF”.</span>
+        </div>
+        <div class="stat-grid" id="stat-grid">
+          <div class="stat-card">
+            <p class="stat-label">Approved Evaluations</p>
+            <p class="stat-value" data-stat="approved_evaluations">--</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Approved Plans</p>
+            <p class="stat-value" data-stat="approved_plans">--</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Protocols Total</p>
+            <p class="stat-value" data-stat="protocols_total">--</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Protocols Scored</p>
+            <p class="stat-value" data-stat="protocols_scored">--</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Plans Scored</p>
+            <p class="stat-value" data-stat="plans_scored">--</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-title">
+          <h2>AAPM Abstract</h2>
+          <p class="section-subtitle">Auto-generated from current outputs</p>
+        </div>
+        <div class="abstract-grid">
+          <div class="abstract-card">
+            <h3>Purpose</h3>
+            <p data-abstract="purpose">--</p>
+          </div>
+          <div class="abstract-card">
+            <h3>Methods</h3>
+            <p data-abstract="methods">--</p>
+          </div>
+          <div class="abstract-card">
+            <h3>Results</h3>
+            <p data-abstract="results">--</p>
+          </div>
+          <div class="abstract-card">
+            <h3>Conclusions</h3>
+            <p data-abstract="conclusions">--</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">
+          <h2>Stability Summary</h2>
+          <p class="section-subtitle">Across protocols with sufficient scored plans</p>
+        </div>
+        <div class="summary-grid">
+          <div class="summary-card">
+            <h3>Eligible Plan Counts</h3>
+            <p class="summary-value">
+              Median <span data-stat="plans_eligible_median">--</span>
+            </p>
+            <p class="summary-note">
+              IQR <span data-stat="plans_eligible_p25">--</span> -
+              <span data-stat="plans_eligible_p75">--</span>
+            </p>
+          </div>
+          <div class="summary-card">
+            <h3>Constraint Coverage</h3>
+            <p class="summary-value">
+              <span data-stat="protocols_with_constraints">--</span> protocols mapped
+            </p>
+            <p class="summary-note">
+              <span data-stat="protocols_missing_constraints">--</span> missing constraints
+            </p>
+          </div>
+          <div class="summary-card">
+            <h3>Skipped Protocols</h3>
+            <p class="summary-value">
+              <span data-stat="protocols_skipped">--</span> skipped in stability runs
+            </p>
+            <p class="summary-note">Missing constraints or insufficient eligible plans</p>
+          </div>
+        </div>
+        <div class="chart-grid">
+          <div class="chart-card">
+            <h3>Aggregate MAE Learning Curve</h3>
+            <div id="aggregate-mae" class="chart"></div>
+          </div>
+          <div class="chart-card">
+            <h3>Aggregate Bottom-Decile Agreement</h3>
+            <div id="aggregate-bottom" class="chart"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">
+          <h2>Protocol Explorer</h2>
+          <p class="section-subtitle">Select a protocol to view stability curves</p>
+        </div>
+        <div class="protocol-controls">
+          <label for="protocol-select">Protocol</label>
+          <select id="protocol-select"></select>
+          <div class="protocol-meta">
+            <p><span class="meta-label">Plans:</span> <span data-protocol="plans_total">--</span></p>
+            <p><span class="meta-label">Eligible:</span> <span data-protocol="plans_eligible">--</span></p>
+            <p><span class="meta-label">Constraints:</span> <span data-protocol="constraints_total">--</span></p>
+            <p><span class="meta-label">With Values:</span> <span data-protocol="constraints_with_values">--</span></p>
+          </div>
+        </div>
+        <div class="chart-grid">
+          <div class="chart-card">
+            <h3>MAE</h3>
+            <div id="protocol-mae" class="chart"></div>
+          </div>
+          <div class="chart-card">
+            <h3>KS Distance</h3>
+            <div id="protocol-ks" class="chart"></div>
+          </div>
+          <div class="chart-card">
+            <h3>Wasserstein</h3>
+            <div id="protocol-wass" class="chart"></div>
+          </div>
+          <div class="chart-card">
+            <h3>Bottom-Decile Agreement</h3>
+            <div id="protocol-bottom" class="chart"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">
+          <h2>Figures</h2>
+          <p class="section-subtitle">Generated from current outputs</p>
+        </div>
+        <div class="figure-grid">
+          <figure class="figure-card">
+            <img src="../outputs/figures/fig_learning_curves.png" alt="Learning curves" />
+            <figcaption>Learning curves with median and IQR across protocols.</figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="../outputs/figures/fig_top_protocols.png" alt="Top protocols" />
+            <figcaption>Top protocols by approved plan count.</figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="../outputs/figures/fig_nstar_distribution.png" alt="N star distribution" />
+            <figcaption>Distribution of N* across protocols with stability fits.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section muted">
+        <div class="section-title">
+          <h2>Upcoming Analyses</h2>
+          <p class="section-subtitle">Protocol-specific vs pooled references</p>
+        </div>
+        <p>
+          Generic vs protocol reference comparisons and shrinkage blending will appear here
+          after Step 4 and Step 5 outputs are generated.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Local dashboard. Refresh to load newly generated outputs.</p>
+    </footer>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>

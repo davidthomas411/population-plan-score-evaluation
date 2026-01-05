@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-01-05T18:44:00Z",
+  "stats": {
+    "approved_evaluations": 18316,
+    "approved_plans": 7177,
+    "protocols_total": 196,
+    "protocols_with_constraints": 150,
+    "protocols_missing_constraints": 46,
+    "plans_scored": 4068,
+    "protocols_scored": 41,
+    "protocols_skipped": 155,
+    "plans_eligible_median": 72,
+    "plans_eligible_p25": 24,
+    "plans_eligible_p75": 112
+  },
+  "abstract": {
+    "purpose": "Assess the stability of population-based plan scores across diverse radiotherapy protocols using approved DVH evaluations.",
+    "methods": "Retrospective analysis of 18,316 approved evaluations (7,177 plans) across 196 protocols. Protocol-specific constraint percentiles were used to compute plan scores (weights = 1/priority; higher is better). Stability was evaluated with bootstrap sampling at N=10-100 and a fixed holdout test set (20% of plans, minimum 20 per protocol). Metrics included MAE, distribution distance, and bottom-decile agreement.",
+    "results": "41 protocols had sufficient scored plans for stability analysis. Median MAE improved from 0.096 at N=10 to 0.02 at N=100. Median bottom-decile agreement reached 1.0 by N=50. N* median 75 (IQR 50-100).",
+    "conclusions": "Population plan score stability improves rapidly with modest sample sizes, with diminishing returns beyond approximately 50-100 plans for many protocols. Protocols with sparse or missing constraint mappings remain a limiting factor for broad generalization."
+  },
+  "top_protocols": [
+    {
+      "protocol": "Breast 42.56Gy Tangent Right",
+      "plan_count": 745
+    },
+    {
+      "protocol": "Breast 40.05Gy  4fields Left",
+      "plan_count": 658
+    },
+    {
+      "protocol": "Prostate 70Gy in 28fx",
+      "plan_count": 651
+    },
+    {
+      "protocol": "Lung 45Gy in30fx",
+      "plan_count": 356
+    },
+    {
+      "protocol": "Breast 40.05Gy Tangent Left",
+      "plan_count": 337
+    },
+    {
+      "protocol": "GBM 60Gy in 30fx",
+      "plan_count": 281
+    },
+    {
+      "protocol": "Lung SBRT 50Gy in 4fx",
+      "plan_count": 259
+    },
+    {
+      "protocol": "UK Fast-Forward  26 Gy / 5 fx daily Left",
+      "plan_count": 199
+    },
+    {
+      "protocol": "Rectal 54Gy in 27fx",
+      "plan_count": 181
+    },
+    {
+      "protocol": "Lung SBRT 60Gy in 5fx",
+      "plan_count": 178
+    },
+    {
+      "protocol": "H&N Def Other",
+      "plan_count": 160
+    },
+    {
+      "protocol": "H&N Def OC",
+      "plan_count": 150
+    }
+  ],
+  "learning_curve": [
+    {
+      "N": 10,
+      "mae_median": 0.0959588784699807,
+      "mae_p25": 0.0632716049382716,
+      "mae_p75": 0.1250657013396375,
+      "ks_median": 0.2666666666666667,
+      "ks_p25": 0.25,
+      "ks_p75": 0.3181818181818182,
+      "wasserstein_median": 0.0846732467470958,
+      "wasserstein_p25": 0.0557578782646307,
+      "wasserstein_p75": 0.1019417475728155,
+      "bottom_decile_median": 0.9333333333333332,
+      "bottom_decile_p25": 0.9,
+      "bottom_decile_p75": 0.975
+    },
+    {
+      "N": 20,
+      "mae_median": 0.0531092935155586,
+      "mae_p25": 0.0428326102167676,
+      "mae_p75": 0.076052735286075,
+      "ks_median": 0.2272727272727273,
+      "ks_p25": 0.2,
+      "ks_p75": 0.25,
+      "wasserstein_median": 0.0380287833126375,
+      "wasserstein_p25": 0.0352692868871972,
+      "wasserstein_p75": 0.0635686295943693,
+      "bottom_decile_median": 0.95,
+      "bottom_decile_p25": 0.9090909090909092,
+      "bottom_decile_p75": 1.0
+    },
+    {
+      "N": 30,
+      "mae_median": 0.0409878758028962,
+      "mae_p25": 0.033285371874005876,
+      "mae_p75": 0.062201850734809876,
+      "ks_median": 0.19999999999999996,
+      "ks_p25": 0.16554054054054046,
+      "ks_p75": 0.25,
+      "wasserstein_median": 0.0359699274274955,
+      "wasserstein_p25": 0.02528508243818945,
+      "wasserstein_p75": 0.054933817033409375,
+      "bottom_decile_median": 0.9871794871794872,
+      "bottom_decile_p25": 0.9090909090909092,
+      "bottom_decile_p75": 1.0
+    },
+    {
+      "N": 50,
+      "mae_median": 0.0332623526172967,
+      "mae_p25": 0.0248212325598174,
+      "mae_p75": 0.0525677677451007,
+      "ks_median": 0.1999999999999999,
+      "ks_p25": 0.140625,
+      "ks_p75": 0.2272727272727272,
+      "wasserstein_median": 0.0283762076511066,
+      "wasserstein_p25": 0.0212177621493497,
+      "wasserstein_p75": 0.0447254039192419,
+      "bottom_decile_median": 1.0,
+      "bottom_decile_p25": 0.975,
+      "bottom_decile_p75": 1.0
+    },
+    {
+      "N": 75,
+      "mae_median": 0.024100099275229298,
+      "mae_p25": 0.020006259976834376,
+      "mae_p75": 0.0258727826499517,
+      "ks_median": 0.1463068181818182,
+      "ks_p25": 0.13378378378378375,
+      "ks_p75": 0.21935483870967737,
+      "wasserstein_median": 0.01886403717596965,
+      "wasserstein_p25": 0.017032128687174623,
+      "wasserstein_p75": 0.023371859732561725,
+      "bottom_decile_median": 1.0,
+      "bottom_decile_p25": 1.0,
+      "bottom_decile_p75": 1.0
+    },
+    {
+      "N": 100,
+      "mae_median": 0.020265835076545897,
+      "mae_p25": 0.01634316120463875,
+      "mae_p75": 0.023976070529423223,
+      "ks_median": 0.1193181818181818,
+      "ks_p25": 0.10842483108108107,
+      "ks_p75": 0.1666666666666666,
+      "wasserstein_median": 0.0173418283105091,
+      "wasserstein_p25": 0.013794661256027425,
+      "wasserstein_p75": 0.022775734026308773,
+      "bottom_decile_median": 1.0,
+      "bottom_decile_p25": 1.0,
+      "bottom_decile_p75": 1.0
+    }
+  ]
+}

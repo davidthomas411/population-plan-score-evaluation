@@ -1,0 +1,42 @@
+protocol,source,plans_total,plans_eligible,train_size,test_size,constraints_total,constraints_with_values,sample_sizes
+Breast 42.56Gy Tangent Right,standard_protocols_name,745,391,313,78,14,11,"10,20,30,50,75,100"
+Breast 40.05Gy  4fields Left,standard_protocols_name,658,322,258,64,21,16,"10,20,30,50,75,100"
+Prostate 70Gy in 28fx,standard_protocols_name,651,458,366,92,19,2,"10,20,30,50,75,100"
+Lung 45Gy in30fx,standard_protocols_name,356,218,174,44,9,4,"10,20,30,50,75,100"
+GBM 60Gy in 30fx,standard_protocols_name,281,72,52,20,22,4,"10,20,30,50"
+Lung SBRT 50Gy in 4fx,standard_protocols_name,259,161,129,32,22,10,"10,20,30,50,75,100"
+UK Fast-Forward  26 Gy / 5 fx daily Left,standard_protocols_name,199,186,149,37,9,7,"10,20,30,50,75,100"
+Rectal 54Gy in 27fx,standard_protocols_name,181,96,76,20,26,17,"10,20,30,50,75"
+Lung SBRT 60Gy in 5fx,standard_protocols_name,178,154,123,31,24,9,"10,20,30,50,75,100"
+H&N Def Other,standard_protocols_name,160,152,122,30,49,29,"10,20,30,50,75,100"
+H&N Def OC,standard_protocols_name,150,149,119,30,50,29,"10,20,30,50,75,100"
+"Florence,30 Gy/5 fx Left",standard_protocols_name,145,131,105,26,15,10,"10,20,30,50,75,100"
+Brain SRS 1fx,standard_protocols_name,142,104,83,21,27,3,"10,20,30,50,75"
+Lung SBRT 54Gy in 3fx,standard_protocols_name,141,108,86,22,25,12,"10,20,30,50,75"
+Prostate SBRT,standard_protocols_name,137,77,57,20,41,7,"10,20,30,50"
+H&N Postop Other,standard_protocols_name,115,112,90,22,44,21,"10,20,30,50,75"
+Lung 60-66Gy in30-33fx,standard_protocols_name,113,80,60,20,20,6,"10,20,30,50"
+General GYN no LNs,protocols,99,86,66,20,32,12,"10,20,30,50"
+Brain SRT 3fx,standard_protocols_name,95,83,63,20,26,5,"10,20,30,50"
+General GYN with LNs Boost,protocols,94,90,70,20,28,6,"10,20,30,50"
+H&N Postop OC,standard_protocols_name,83,83,63,20,45,21,"10,20,30,50"
+Brain SRT 5fx,standard_protocols_name,78,62,42,20,25,5,"10,20,30"
+H&N Def LxHypo,standard_protocols_name,60,60,40,20,48,29,"10,20,30"
+Breast 46Gy 4fields Left,standard_protocols_name,58,48,28,20,19,13,"10,20"
+Lung Hypofx 60-70Gy in 10fx,standard_protocols_name,56,16,10,6,14,5,10
+UK FAST 28.5 Gy / 5 fx weekly Right,standard_protocols_name,52,50,30,20,12,10,"10,20,30"
+Esophagus in 23-28fx,standard_protocols_name,48,31,11,20,31,3,10
+Breast 40.05Gy Tangent Right,standard_protocols_name,41,26,10,16,14,9,10
+Anal in 25-33fx,standard_protocols_name,40,24,10,14,42,1,10
+Prostate Fossa 6840 38 fx,protocols,38,33,13,20,18,17,10
+Sarcoma,standard_protocols_name,30,16,10,6,18,9,10
+Pancrease in 28-30fx,standard_protocols_name,26,23,10,13,28,6,10
+Intact Vulva with LNs Boost,protocols,25,25,10,15,26,18,10
+H&N Postop LxHypo,standard_protocols_name,25,25,10,15,43,21,10
+Whole Brain Hippocampal Sparing,protocols,23,22,10,12,16,5,10
+3DTLSPINE,protocols,22,17,10,7,10,6,10
+Pancrease  in 15fx,standard_protocols_name,21,11,10,1,8,2,10
+Breast 45Gy in 30fx BID Re-RT Left,standard_protocols_name,21,15,10,5,11,8,10
+3D TSPINE,protocols,19,14,10,4,8,6,10
+Prostate 60Gy in 20fx,standard_protocols_name,16,13,10,3,9,8,10
+Prostate 84.70.56.50.4 GU009 2.5GY FX PROTOCOL,protocols,13,13,10,3,30,7,10

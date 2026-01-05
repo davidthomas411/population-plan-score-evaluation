@@ -1,0 +1,197 @@
+protocol,plan_count
+Breast 42.56Gy Tangent Right,745
+Breast 40.05Gy  4fields Left,658
+Prostate 70Gy in 28fx,651
+Lung 45Gy in30fx,356
+Breast 40.05Gy Tangent Left,337
+GBM 60Gy in 30fx,281
+Lung SBRT 50Gy in 4fx,259
+UK Fast-Forward  26 Gy / 5 fx daily Left,199
+Rectal 54Gy in 27fx,181
+Lung SBRT 60Gy in 5fx,178
+H&N Def Other,160
+H&N Def OC,150
+"Florence,30 Gy/5 fx Left",145
+Brain SRS 1fx,142
+Lung SBRT 54Gy in 3fx,141
+Prostate SBRT,137
+H&N Postop Other,115
+Lung 60-66Gy in30-33fx,113
+UNKNOWN,109
+General GYN no LNs,99
+Brain SRT 3fx,95
+General GYN with LNs Boost,94
+H&N Postop OC,83
+WBRT-HA 30 Gy in 10fx,81
+Brain SRT 5fx,78
+Lung Hypofx 60Gy in 15fx,77
+Prostate Re-RT SBRT,67
+Bone mets 2000 5fx NRG-CC014,66
+GBM re-RT 35Gy in 10fx - No previous radiation to the local area or critical OARs,63
+H&N Def LxHypo,60
+GBM 40.05Gy in 15fx,60
+Breast 46Gy 4fields Left,58
+Lung Hypofx 60-70Gy in 10fx,56
+Spine SBRT 3fx,55
+UK FAST 28.5 Gy / 5 fx weekly Right,52
+Esophagus in 23-28fx,48
+Breast 40.05Gy Tangent Right,41
+Spine SBRT 5fx,41
+Anal in 25-33fx,40
+Pancreas HIGRT ALLIANCE 25Gy in 5fx,39
+Prostate Fossa 6840 38 fx,38
+Pancrease  in 25fx,35
+Sarcoma,30
+UK Fast-Forward  26 Gy / 5 fx daily Right,29
+Pancrease in 28-30fx,26
+Intact Vulva with LNs Boost,25
+H&N Postop LxHypo,25
+Bone mets 800 1fx NRG-CC014,24
+Whole Brain Hippocampal Sparing,23
+3DTLSPINE,22
+Spine SBRT 1fx,22
+Lung SBRT 34Gy in 1fx,22
+Pancrease  in 15fx,21
+Breast 45Gy in 30fx BID Re-RT Left,21
+3D TSPINE,19
+Prostate 60Gy in 20fx,16
+WBRT-HA 25Gy in 10fx,15
+Prostate 55Gy in 20fx,14
+Prostate Pelvis 4600 23fx EBRT HDR boost,14
+Prostate 84.70.56.50.4 GU009 2.5GY FX PROTOCOL,13
+Extra Thoracic 3000 10fx NRGLU007,12
+Lymphoma_hematologic nccn. need to finalize,11
+GYN LNs Boost,11
+Prostate Intact 7920 44fx,10
+3D CTSPINE,9
+Prostate 84.70.56.50.4 GU009 3GY FX PROTOCOL,8
+HN_70Gy 35fx Nivolumab,8
+Abdomen BR002 5fx,7
+Prostate Intact 7800 39fx,7
+brain morrison k,7
+Prostate Intact 8100 45fx,6
+Spine SBRT 24Gy in 1fx,6
+Extra Thoracic 2000 5fx NRGLU007,6
+GYN No LNs,5
+H&N 6000 30fx Pembrolizumab,5
+"Bladder Dr Jain 55,44",5
+"Pancreas 54, 45",5
+Prostate Pelvis 4500 25fx,5
+Timmerman10fx,5
+lung retreat composite report max,4
+Anal Canal CD 54+36 RTOG 0539,4
+Liver 35Gy in 5fx,4
+Prostate 70-56-47.6Gy_2.5x28,4
+GYNLNs sib55_45,4
+SBRT PELVIS 3fx. 27Gy  TIMMERMAN,4
+Prostate 4500 25fx (scaled from 7000),3
+Prostate 84.70.56.50.4 GU009 PROTOCOL,3
+Anal Canal SIB 54+45 RTOG 0539,3
+Prostate Intact 8000 40fx,3
+Lung 300x15=4500cGy,3
+Mediastinum Gaston - absolute,3
+JANUS RECTAL PROTOCOL 54- 45 SIB,3
+R temple 55G,3
+HN 36g,3
+Breast 50Gy Left,2
+brain generic MAX REPORT,2
+Lymphoma HN or Thorax,2
+benn,2
+Anal METZ,2
+tspien proch,2
+HN_BID_60Gy_50fx based on ECOG-ACRIN,2
+met sample,2
+ABD_Pelv SBRT 600_700 x 5 - Trull,2
+Lymphoma_NCCN. ABDOMEN+THORAX,2
+SBRT 2400 L1,2
+"PELVIS+ABD 55,45",2
+"Casttro, Luz A re-irradiation HN BID",2
+Rectal G1002,2
+Paratracheal or SCV 5FX 35GY SBRT - Benhayon,2
+"ParaAortics 55,45",2
+Timmerman20fx,2
+3DTLSPINEHAWKINS,2
+Lung 150x30=4500cGy BID,2
+Bile Duct 56 and 45,2
+Timmerman4fx,2
+Brain DMAX REPORT,2
+Intact Vulva no LNs,1
+Liver 3000 10fx NRGLU007,1
+000 delet,1
+HN_lymphoma 30Gy 15Fx,1
+"Lymphoma_Mediastinum 40,30 Dr Jain",1
+Chest wall 42.56Gy 4fields Right,1
+Pancreas 30,1
+"RTOG 0413, 38.5 Gy/10 fx Left",1
+HARPER__DAMANI__407615419__C1_LUL_AxbTest,1
+LUNG EQD2 THORACIC PLAN SUM CONSTRAINTS,1
+Unilateral_Left,1
+L ILIAC HENRY,1
+WBRT-HA HENRY,1
+RT_BRST_Rt_Breast_HB,1
+HUNT__DEANN__03214178__C1_left_breast2,1
+PUGH__DIEMMA__400606180__C1_Plan_Sum,1
+"Pancreas 54, 51",1
+RHIPILIAC30G,1
+Liver 35Gy in 5fx 2 Sites Labarge,1
+HN_Postop Evans - Eye 56-ON 55,1
+ParaAorticLN 4 Fractions SBRT,1
+Intact Vulva LNs Boost ARCHIBLAD COMP,1
+CAPELLA     Prostate,1
+FOX SIB 6250_5000 25fx,1
+Abdomen_Pancreas 40Gy in 5fx,1
+General GYN with LNs FOWLER,1
+Lt LUE AX -HARRELL,1
+Bladder 55 JNJ,1
+SBRT Bone 2400 in 2fx,1
+Lung 60-66,1
+Pancreas SBRT ALLIANCE 33Gy in 5fx,1
+CSPINEMATOS,1
+Lung 6000-6000 16fx RePlan JS MWW,1
+RT_CW_Plan_Sum,1
+"Lymphoma_Mediastinum 45,36 Dr Jain",1
+Timmerman2fx,1
+"H&N 70,63,56 - JNJ",1
+Anus SIB RTOG 0529 - Copy,1
+Lung,1
+HB_L_SC_CW_Plan_Sum,1
+Paratracheal or SCV 5FX 35GY SBRT - Benhayon - Copy,1
+SULLIVAN__CHRISTINE__403376151__C1_Plan_Sum,1
+BOT_orig8fx_&_replan,1
+GYN Pel66.4G BOYLE,1
+ABDO 35G SBRT BARJI,1
+Lung 5500 22Fx,1
+Adrenal sbrt 5fx24G_risley_JNJ,1
+H&N Palliative 30Gy 5fx,1
+Prostate LN Boost PostOp 7400 ACM,1
+3D CSPINEFRANKEN,1
+SBRT sib25_20 - JNJ - smith,1
+BRAIN 20G O HARA,1
+HN_Postop BUZBY,1
+CURRIE__LEON__408368122__C1_Pelvis-3fiel3,1
+SPC_PLAN_SUM,1
+Timmerman8fx,1
+L KIDNEY- MATTICKS 5fx 35Gy,1
+BETTENCOURT,1
+Liver_Pancreas 40Gy in 5fx - Schiavo,1
+Pancreas 54_4509,1
+orobko,1
+"H&N 70,63,56_EA3161 SUM",1
+cammarata H&N,1
+Grandrimo,1
+Lt scvax - JNJ - Copy,1
+bowman,1
+lopez,1
+Head Neck 66 60 54,1
+EVAL_C1_WB_HS3,1
+Pelvis GY017,1
+Anus SIB RTOG 0529 Script,1
+"Scherfel, Margaret Elbow",1
+H&N - 60 revised,1
+R_NECK_TONSIL_R_NECK_TONSIL,1
+EVAL_C1_Plan_Sum_3d,1
+LILIAC HOUCK,1
+RT_BREAST_LNs_R_BRST_LN_N,1
+Plan_Sum1,1
+PalliationForLocallyAdvancedUnresectableTumorSIB,1
+EVAL_C1_Plan_Sum1,1
